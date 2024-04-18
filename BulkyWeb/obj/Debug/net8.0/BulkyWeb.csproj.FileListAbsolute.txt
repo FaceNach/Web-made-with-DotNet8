@@ -494,3 +494,11 @@ C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Bul
 C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Bulky.DataAccess.pdb
 C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Bulky.Models.pdb
 C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Bulky.Utily.pdb
+C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
