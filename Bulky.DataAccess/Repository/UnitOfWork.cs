@@ -12,11 +12,13 @@ namespace Bulky.DataAccess.Repository
 	{
 		private readonly ApplicationDbContext _DB;
 		public ICategoryRepository Category { get; private set; }
+		public IProductRepository Product { get; private set; }
 
 		public UnitOfWork(ApplicationDbContext DB)
         {
             _DB = DB;
 			Category = new CategoryRepository(_DB);
+			Product = new ProductRepository(_DB);
         }
 
 		public void Save()
