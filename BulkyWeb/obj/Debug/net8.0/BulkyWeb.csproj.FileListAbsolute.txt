@@ -502,3 +502,6 @@ C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\dot
 C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
 C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\obj\Debug\net8.0\BulkyWeb.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Usuario\Desktop\Proyecto\YT project\Bulky\BulkyWeb\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

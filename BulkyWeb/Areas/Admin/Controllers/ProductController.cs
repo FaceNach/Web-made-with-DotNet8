@@ -1,6 +1,8 @@
 ﻿using Bulky.DataAccess.Repository.IRepository;
 using Bulky.Models;
+using Bulky.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
 
 namespace BulkyWeb.Areas.Admin.Controllers
@@ -22,24 +24,39 @@ namespace BulkyWeb.Areas.Admin.Controllers
 
         public IActionResult Create()
         {
-            return View();  
+            ProductVM ProductVM = new ProductVM()
+            {
+                 CategoryList = _UnitOfWork.Category.GetAll().Select(u => new SelectListItem
+				 {
+					 Text = u.Name,
+					 Value = u.Id.ToString()
+				 }),   
+                 Product = new Product()
+            };
+
+            return View(ProductVM);  
         }
 
         [HttpPost]
-        public IActionResult Create(Product obj)
-        { 
-            if(obj.Title == obj.Author.ToString())
+        public IActionResult Create(ProductVM ProductVM)
+        {  
+            if( ModelState.IsValid)
             {
-                ModelState.AddModelError("title", "The title can't be the same as ISBN");
-            }
-            if( obj != null)
-            {
-                _UnitOfWork.Product.Add(obj);
+                _UnitOfWork.Product.Add(ProductVM.Product);
                 _UnitOfWork.Save();
                 TempData["success"] = "Product added succesfully";
-                return RedirectToPage("Index");
+                return RedirectToAction("Index");
             }
-            return View();
+            else
+            {
+
+                ProductVM.CategoryList = _UnitOfWork.Category.GetAll().Select(u => new SelectListItem
+                {
+                    Text = u.Name,
+                    Value = u.Id.ToString()
+                });
+                return View(ProductVM);
+			}
         }
 
         public IActionResult Edit(int? id)
@@ -67,7 +84,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
                 _UnitOfWork.Product.Update(obj);
                 _UnitOfWork.Save();
                 TempData["success"] = "Product updated successfully";
-                return RedirectToPage("Index");
+                return RedirectToAction("Index");
             }
 
             return View();
@@ -89,7 +106,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
             return View(ProductFromDB);
         }
 
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         public IActionResult DeletePOST(int? id)
         {
             Product? obj = _UnitOfWork.Product.Get(u => u.Id == id);
@@ -98,12 +115,12 @@ namespace BulkyWeb.Areas.Admin.Controllers
             {
                 NotFound();
             }
-
+            
             _UnitOfWork.Product.Remove(obj);
             _UnitOfWork.Save();
-            TempData["success"] = "Product deleted successfully";   
-            
-            return RedirectToPage("Index");
+            TempData["success"] = "Product deleted successfully";
+            return RedirectToAction("Index");
+   
         }
     }
 }
