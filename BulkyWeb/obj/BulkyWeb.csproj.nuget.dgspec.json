@@ -295,6 +295,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Utils": {
               "target": "Package",
               "version": "[8.0.2, )"
+            },
+            "TinyMce": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             }
           },
           "imports": [

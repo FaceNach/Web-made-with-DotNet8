@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zWxhvuQAu5/1AFJG9IM8nXrNxoo/OjB37cxK+jmJYR9rKD8EqwXGycHxO1uf2naNsPX+SwDZv0ILBqwmRY3v9w==",
+  "dgSpecHash": "8lgIIWwJaOQrTAxtHZ+7+e5MXnBN9Q3PDrXfA/q0TqAfgdfdwB/eFg/Z1inKsO8OlVkDCqqVBxocRqN5toww1w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\BulkyWeb\\BulkyWeb.csproj",
   "expectedPackageFiles": [
@@ -265,7 +265,8 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\tinymce\\7.0.1\\tinymce.7.0.1.nupkg.sha512"
   ],
   "logs": []
 }
