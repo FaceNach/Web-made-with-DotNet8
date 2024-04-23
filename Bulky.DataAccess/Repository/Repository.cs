@@ -19,17 +19,34 @@ namespace Bulky.DataAccess.Repository
             _DB = DB;
 			this.DBSet = _DB.Set<T>();
         }
-        public T Get(System.Linq.Expressions.Expression<Func<T, bool>> filter)
+        public T Get(System.Linq.Expressions.Expression<Func<T, bool>> filter, string? IncludeProperties = null)
 		{
 			IQueryable<T> query = DBSet;
 			query = query.Where(filter);
 
+			if (!string.IsNullOrEmpty(IncludeProperties))
+			{
+				foreach (var IncludeProp in IncludeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+				{
+					query = query.Include(IncludeProp);
+				}
+			}
+
 			return query.FirstOrDefault();
 		}
 
-		public IEnumerable<T> GetAll()
+		public IEnumerable<T> GetAll(string? IncludeProperties = null)
 		{
 			IQueryable<T> query = DBSet;
+
+			if(!string.IsNullOrEmpty(IncludeProperties))
+			{
+				foreach(var IncludeProp in IncludeProperties.Split(new char[] {','}, StringSplitOptions.RemoveEmptyEntries))
+				{
+					query = query.Include(IncludeProp);
+				}
+			}
+
 			return query.ToList();
 		}
 

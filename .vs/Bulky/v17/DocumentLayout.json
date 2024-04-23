@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EEA6E0BA-8A77-4ED4-86DB-5CF8981E292D}|BulkyWeb\\BulkyWeb.csproj|c:\\users\\usuario\\desktop\\proyecto\\yt project\\bulky\\bulkyweb\\areas\\admin\\views\\product\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EEA6E0BA-8A77-4ED4-86DB-5CF8981E292D}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\areas\\admin\\views\\product\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EEA6E0BA-8A77-4ED4-86DB-5CF8981E292D}|BulkyWeb\\BulkyWeb.csproj|c:\\users\\usuario\\desktop\\proyecto\\yt project\\bulky\\bulkyweb\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EEA6E0BA-8A77-4ED4-86DB-5CF8981E292D}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EEA6E0BA-8A77-4ED4-86DB-5CF8981E292D}|BulkyWeb\\BulkyWeb.csproj|c:\\users\\usuario\\desktop\\proyecto\\yt project\\bulky\\bulkyweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EEA6E0BA-8A77-4ED4-86DB-5CF8981E292D}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F2F82281-24C9-4D5D-9DFA-4CC733F66F70}|Bulky.DataAccess\\Bulky.DataAccess.csproj|c:\\users\\usuario\\desktop\\proyecto\\yt project\\bulky\\bulky.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2F82281-24C9-4D5D-9DFA-4CC733F66F70}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA6E0BA-8A77-4ED4-86DB-5CF8981E292D}|BulkyWeb\\BulkyWeb.csproj|c:\\users\\usuario\\desktop\\proyecto\\yt project\\bulky\\bulkyweb\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEA6E0BA-8A77-4ED4-86DB-5CF8981E292D}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,27 +35,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAEQAAABaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-22T12:59:09.163Z",
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\Bulky.DataAccess\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\Bulky.DataAccess\\Repository\\Repository.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\Repository.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwB4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T13:27:32.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Upsert.cshtml",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\BulkyWeb\\Areas\\Admin\\Views\\Product\\Upsert.cshtml",
-              "RelativeDocumentMoniker": "BulkyWeb\\Areas\\Admin\\Views\\Product\\Upsert.cshtml",
-              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\BulkyWeb\\Areas\\Admin\\Views\\Product\\Upsert.cshtml",
-              "RelativeToolTip": "BulkyWeb\\Areas\\Admin\\Views\\Product\\Upsert.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAkwBYAAAAPAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\BulkyWeb\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "BulkyWeb\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\BulkyWeb\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "BulkyWeb\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADIAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-22T12:22:16.454Z",
+              "WhenOpened": "2024-04-23T13:22:48.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\BulkyWeb\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "BulkyWeb\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\BulkyWeb\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "BulkyWeb\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T12:13:57.12Z",
               "EditorCaption": ""
             }
           ]

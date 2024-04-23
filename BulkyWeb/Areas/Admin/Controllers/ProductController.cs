@@ -1,6 +1,7 @@
 ﻿using Bulky.DataAccess.Repository.IRepository;
 using Bulky.Models;
 using Bulky.Models.ViewModels;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
@@ -11,14 +12,17 @@ namespace BulkyWeb.Areas.Admin.Controllers
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _UnitOfWork;
-        public ProductController(IUnitOfWork UnitOfWork)
+        private readonly IWebHostEnvironment _WebHostEnviroment;
+        public ProductController(IUnitOfWork UnitOfWork, IWebHostEnvironment WebHostEnviroment )
         {
             _UnitOfWork = UnitOfWork;
-        }
+			_WebHostEnviroment = WebHostEnviroment;
+
+		}
 
         public IActionResult Index()
         {
-            List<Product> ListOfProducts = _UnitOfWork.Product.GetAll().ToList();
+            List<Product> ListOfProducts = _UnitOfWork.Product.GetAll(IncludeProperties:"Category").ToList();
             return View(ListOfProducts);
         }
 
@@ -50,7 +54,41 @@ namespace BulkyWeb.Areas.Admin.Controllers
         {  
             if( ModelState.IsValid)
             {
-                _UnitOfWork.Product.Add(ProductVM.Product);
+                string wwwRootPath = _WebHostEnviroment.WebRootPath;
+
+                if(file != null)
+                {
+                    string FileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                    string ProductPath = Path.Combine(wwwRootPath, @"images\product");
+
+                    if(!string.IsNullOrEmpty(ProductVM.Product.ImageUrl))
+                    {
+                        //delete old image
+                        var OldImagePath = Path.Combine(wwwRootPath, ProductVM.Product.ImageUrl.TrimStart('\\'));
+
+                        if(System.IO.File.Exists(OldImagePath))
+                        {
+                            System.IO.File.Delete(OldImagePath);
+                        }
+                    }
+
+                    using (var FileStream = new FileStream(Path.Combine(ProductPath, FileName), FileMode.Create))
+                    {
+                        file.CopyTo(FileStream);
+                    }
+
+                    ProductVM.Product.ImageUrl = @"\images\product\" + FileName;
+                }
+
+                if(ProductVM.Product.Id == 0)
+                {
+					_UnitOfWork.Product.Add(ProductVM.Product);
+				}
+                else
+                {
+                    _UnitOfWork.Product.Update(ProductVM.Product);
+                }
+                
                 _UnitOfWork.Save();
                 TempData["success"] = "Product added succesfully";
                 return RedirectToAction("Index");
