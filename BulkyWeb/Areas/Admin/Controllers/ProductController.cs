@@ -137,5 +137,16 @@ namespace BulkyWeb.Areas.Admin.Controllers
             return RedirectToAction("Index");
    
         }
+
+        #region API CALLS
+
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            List<Product> ListOfProducts = _UnitOfWork.Product.GetAll(IncludeProperties: "Category").ToList();
+            return Json(new { data = ListOfProducts });
+        }
+
+        #endregion
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4FMQ0PM0F1Ym/g14XeUGjIA6BQbTo/P7DSDbJiMs2m8=",
+  "Hash": "3inFkSBo8kd2LECTi9HIbVt93FGOGEOLJEuswAVVlns=",
   "Source": "BulkyWeb",
   "BasePath": "_content/BulkyWeb",
   "Mode": "Default",
@@ -226,6 +226,25 @@
       "OriginalItemSpec": "wwwroot\\images\\product\\f3da7d3a-49c2-4b4c-86f1-f6e20f9ee2c8.jpg"
     },
     {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\f4501918-351b-484d-bba9-29bd6690d058.jpg",
+      "SourceId": "BulkyWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\BulkyWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyWeb",
+      "RelativePath": "images/product/f4501918-351b-484d-bba9-29bd6690d058.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\f4501918-351b-484d-bba9-29bd6690d058.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\f4532ebc-deb6-41fd-b5f5-ef31f9c9d037.jpg",
       "SourceId": "BulkyWeb",
       "SourceType": "Discovered",
@@ -243,6 +262,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\f4532ebc-deb6-41fd-b5f5-ef31f9c9d037.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\BulkyWeb\\wwwroot\\js\\product.js",
+      "SourceId": "BulkyWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\BulkyWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyWeb",
+      "RelativePath": "js/product.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\product.js"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Desktop\\Proyecto\\YT project\\Bulky\\BulkyWeb\\wwwroot\\js\\site.js",
